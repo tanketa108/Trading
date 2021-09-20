@@ -12,11 +12,7 @@ st.header(option)
 
 if option == "Cartera":
 	st.subheader("Cartera")
-
-##subir archivo file = st.file_uploader("Pick a file')
-		df = pd.read_csv("Portfolio")
-		st.line_chart(df)
-##
+	
 if option == "Seguimiento":
 	st.subheader("Seguimiento")
 
