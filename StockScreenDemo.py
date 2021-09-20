@@ -10,7 +10,7 @@ option = st.sidebasr.selectbox("Dashboard", ("Cartera","Stocktwists","Twitter", 
 
 st.header(option)
 
-if option == "Cartera"
+if option == "Cartera":
 	st.subheader("Cartera")
 
 #subir archivo
@@ -18,7 +18,7 @@ if option == "Cartera"
 		df = pd.read_csv("Portfolio")
 		st.line_chart(df)
 
-if option == "Seguimiento"
+if option == "Seguimiento":
 	st.subheader("Seguimiento")
 
 	st.write("""
@@ -36,10 +36,10 @@ if option == "Seguimiento"
 
 
 
-if option == "Stocktwists"
+if option == "Stocktwists":
 	st.subheader("Stocktwists")
 
-if option == "Twitter"
+if option == "Twitter":
 	st.subheader("Twitter")
 
     
