@@ -20,7 +20,7 @@ if option == "Seguimiento":
 		# Stock Price
 		""")
 
-	tickerSymbol = 
+	
 
 	tickerData = yf.Ticker(tickerSymbol) 
 	# get the historical prices for the ticker
