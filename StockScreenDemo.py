@@ -12,7 +12,6 @@ from plotly.subplots import make_subplots
 """
 streamlit.area_chart(data=None, width=0, height=0, use_container_width=True)
 >>> chart_data = pd.DataFrame(
-...     np.random.randn(20, 3),
-...     columns=['a', 'b', 'c'])
-...
->>> st.area_chart(chart_data)
+  np.random.randn(20, 3),
+  columns=['a', 'b', 'c'])
+ st.area_chart(chart_data)
