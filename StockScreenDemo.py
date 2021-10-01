@@ -10,8 +10,6 @@ from plotly.subplots import make_subplots
 # Welcome to Streamlit!
 
 """
-streamlit.area_chart(data=None, width=0, height=0, use_container_width=True)
->>> chart_data = pd.DataFrame(
-  np.random.randn(20, 3),
-  columns=['a', 'b', 'c'])
- st.area_chart(chart_data)
+st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
+        .mark_circle(color='#0068c9', opacity=0.5)
+        .encode(x='x:Q', y='y:Q'))
