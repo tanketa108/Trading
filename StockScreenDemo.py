@@ -16,7 +16,6 @@ import altair as alt
 add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
     ("Portfolio", "Information", "News")
-st.header(add_selectbox)
 
 if add_selectbox == "Portfolio":
 	st.subheader("Portfolio")
