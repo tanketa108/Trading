@@ -19,7 +19,8 @@ add_selectbox = st.sidebar.selectbox(
 
 if add_selectbox == "Portfolio":
 	st.subheader("Portfolio")
-    
+
+else
 
 # https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
 #define the ticker symbol
