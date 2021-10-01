@@ -12,7 +12,7 @@ import altair as alt
 # Welcome to Streamlit!
 
 """
-st.sidebar.[element_name]
+
 add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
     ("Email", "Home phone", "Mobile phone")
