@@ -6,4 +6,5 @@ import datetime as dt
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-write('Hello, *World!* :sunglasses:')
+"""
+# Welcome to Streamlit!
