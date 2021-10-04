@@ -12,8 +12,8 @@ import altair as alt
 # Welcome to Streamlit!
 
 """
-
-add_selectbox = st.sidebar.selectbox(
+"""
+# add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
     ("Portfolio", "Information", "News")
 
@@ -21,6 +21,7 @@ if add_selectbox == "Portfolio":
 	st.subheader("Portfolio")
 
 else
+"""
 
 st.write("""
 # Simple Stock Price App
