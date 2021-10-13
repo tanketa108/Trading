@@ -3,6 +3,7 @@ import pandas as pd
 import yfinance as yf
 import streamlit as st
 import datetime as dt
+import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import altair as alt
@@ -12,12 +13,7 @@ import time
 st.header('MY APP')
 st.subheader('This is a subheader')
 
-st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
-col1, col2, col3 = st.columns(3)
-col1.metric("Temperature", "70 °F", "1.2 °F")
-col2.metric("Wind", "9 mph", "-8%")
-col3.metric("Humidity", "86%", "4%")
 
 df = pd.DataFrame({
      'first column': [1, 2, 3, 4],
