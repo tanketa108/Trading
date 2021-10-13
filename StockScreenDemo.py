@@ -23,8 +23,12 @@ df
 chart_data = pd.DataFrame()
 st.line_chart(chart_data)
 
-fig=px.pie(df,'first colum','second column')
-pie_col.write(fig)
+values = [ 900, 950, 750]
+titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
+
+
+fig=px.pie(values='values', names='titles')
+fig.show()
 
 # Get some data.
 data = np.random.randn(10, 2)
