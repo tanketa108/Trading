@@ -8,10 +8,14 @@ from plotly.subplots import make_subplots
 import altair as alt
 
 option = st.selectbox(
-     'How would you like to be contacted?',
-     ('Email', 'Home phone', 'Mobile phone'))
+     '',
+     ('Portfolio', 'Market information', 'Portfolio creator'))
 st.write('You selected:', option)
 
+if st.selectbox('Portfolio'):
+     ## Portfolio
+     
+     ##
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
