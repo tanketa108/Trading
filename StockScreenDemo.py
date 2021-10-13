@@ -25,10 +25,4 @@ if st.selectbox('Portfolio'):
      ## Portfolio
      
      ##
-     
-
-
-
-
-
-
+ else
