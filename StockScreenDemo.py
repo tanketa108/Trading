@@ -17,18 +17,17 @@ if st.selectbox('Portfolio'):
      
      ##
 if st.selectbox('Market information'):
+     df = pd.DataFrame({
+     'first column': [1, 2, 3, 4],
+     'second column': [10, 20, 30, 40]
+     })
 
-df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-})
-
-df
+     df
 
 
-chart_data = pd.DataFrame()
+     chart_data = pd.DataFrame()
 
-st.line_chart(chart_data)
+     st.line_chart(chart_data)
 
 
 
