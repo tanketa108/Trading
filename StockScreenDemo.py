@@ -23,7 +23,6 @@ df
 chart_data = pd.DataFrame()
 st.line_chart(chart_data)
 
-df = px.data.tips()
 fig = px.pie(df, values='tip', names='day')
 fig.show()
 
