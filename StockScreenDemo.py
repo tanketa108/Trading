@@ -11,13 +11,9 @@ df = pd.DataFrame({
      'first column': [1, 2, 3, 4],
      'second column': [10, 20, 30, 40]
      })
-
-     df
-
-
-     chart_data = pd.DataFrame()
-
-     st.line_chart(chart_data)
+df
+chart_data = pd.DataFrame()
+st.line_chart(chart_data)
      
      
 option = st.selectbox(
