@@ -25,7 +25,6 @@ if st.selectbox('Portfolio'):
      ## Portfolio
      
      ##
-if st.selectbox('Market information'):
      
 
 
