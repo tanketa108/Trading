@@ -16,6 +16,7 @@ if st.selectbox('Portfolio'):
      ## Portfolio
      
      ##
+if st.selectbox('Market information'):
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
