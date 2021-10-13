@@ -23,7 +23,7 @@ df
 chart_data = pd.DataFrame()
 st.line_chart(chart_data)
 
-fig=px.pie(df, values = 'first colum', names = 'second column')
+fig=px.pie(df,'first colum','second column')
 pie_col.write(fig)
 
 # Get some data.
