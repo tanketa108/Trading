@@ -23,7 +23,7 @@ with header:
 
 with Portfolio:
      st.header('Patrimonio')
-     patrimonio = pd.read_csv('.C:/Python/Trading/data/Patrimonio.csv')
+     #patrimonio = pd.read_csv('.C:/Python/Trading/data/Patrimonio.csv')
      #st.write('.C:/Python/Trading/data/Patrimonio.csv')
      
      df = pd.DataFrame({
