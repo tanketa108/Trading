@@ -23,12 +23,7 @@ df
 chart_data = pd.DataFrame()
 st.line_chart(chart_data)
 
-values = [ 900, 950, 750]
-titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
 
-
-fig=px.pie(values='values', names='titles')
-fig.show()
 
 # Get some data.
 data = np.random.randn(10, 2)
@@ -47,5 +42,27 @@ chart.add_rows(data2)
 option = st.selectbox(
      '',
      ('Portfolio', 'Market information', 'Portfolio creator'))
-st.write('You selected:', option)
+
+
+with Portfolio:
+     st.title(option)
+     values = [ 900, 950, 750]
+     titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
+
+     fig = go.Figure(
+          header=titles
+               fill_color='#FDBE72',
+               align='center'
+          cells=values
+               align='left')
+
+
+     fig=px.pie(values='values', names='titles')
+     
+     fig.update_layout()
+     
+     st.write(fig)
+
+     
+
 
