@@ -26,10 +26,7 @@ with Portfolio:
      #patrimonio = pd.read_csv('https://github.com/tanketa108/Trading/blob/main/data/Patrimonio.csv')
      #st.write('.C:/Python/Trading/data/Patrimonio.csv')
      #df1 = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/Mining-BTC-180.csv")
-     uploaded_file = st.file_uploader("Choose a file")
-     if uploaded_file is not None:
-     df = pd.read_csv(uploaded_file)
-     st.write(dataframe)
+     
      # Add table data
      table_data = [['Fecha','Saldo broker','Criptomonedas','Saldo cuenta'],
               ['01-01-2021', 18, 4, 0],
