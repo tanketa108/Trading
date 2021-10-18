@@ -23,9 +23,9 @@ with header:
 
 with Portfolio:
      st.header('Patrimonio')
-     patrimonio = pd.read_csv('https://github.com/tanketa108/Trading/blob/main/data/Patrimonio.csv')
-     st.write('.C:/Python/Trading/data/Patrimonio.csv')
-     
+     #patrimonio = pd.read_csv('https://github.com/tanketa108/Trading/blob/main/data/Patrimonio.csv')
+     #st.write('.C:/Python/Trading/data/Patrimonio.csv')
+     df1 = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/Mining-BTC-180.csv")
      df = pd.DataFrame({
         
           })
