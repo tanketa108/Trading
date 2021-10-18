@@ -27,8 +27,8 @@ with Portfolio:
      df = pd.DataFrame({
           #'Fecha': [04_08_2020, 28_08_2020, 12_09_2020, 04_11_2020],
           'Saldo broker': [10, 20, 30, 40]
-          'Criptomonedas': [0, 0, 131.06, 122.23]
-          'Saldo cuenta': [218 ,244.52, 327.52, 270.01]
+          'Criptomonedas': [0, 0, 131, 122]
+          'Saldo cuenta': [218 ,244, 327, 270]
           })
      df
      chart_data = pd.DataFrame()
