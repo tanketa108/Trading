@@ -21,11 +21,10 @@ with header:
 
 with Portfolio:
      st.header('Patrimonio')
-     patrimonio = pd.read_csv('data/patrimonio.csv')
-     st.write('patrimonio.csv')
-
-values = [ 900, 950, 750]
-titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
+     #patrimonio = pd.read_csv('data/patrimonio.csv')
+     #st.write('patrimonio.csv')
+     titles = ['Fecha','Saldo broker','Criptomonedas','Saldo cuenta']
+     values = [ 900, 950, 750]
 
 with marketinf:
      st.header('Market information')
