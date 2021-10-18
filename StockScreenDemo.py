@@ -9,6 +9,8 @@ from plotly.subplots import make_subplots
 import altair as alt
 import numpy as np
 import time
+import re 
+
 
 header = st.beta_container()
 Portfolio = st.beta_container()
@@ -22,7 +24,7 @@ with header:
 with Portfolio:
      st.header('Patrimonio')
      patrimonio = pd.read_csv('.C:/Python/Trading/data/Patrimonio.csv')
-     st.write('.C:/Python/Trading/data/Patrimonio.csv')
+     #st.write('.C:/Python/Trading/data/Patrimonio.csv')
      
      df = pd.DataFrame({
         
