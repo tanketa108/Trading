@@ -21,8 +21,8 @@ with header:
 
 with Portfolio:
      st.header('Patrimonio')
-     #patrimonio = pd.read_csv('./data/patrimonio.csv')
-     #st.write('./data/patrimonio.csv')
+     patrimonio = pd.read_csv('./data/patrimonio.csv')
+     st.write('./data/patrimonio.csv')
      
      df = pd.DataFrame({
         
