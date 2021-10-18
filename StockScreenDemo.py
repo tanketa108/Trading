@@ -19,17 +19,17 @@ with header:
 
 
 
-with Portfolio
+with Portfolio:
      st.header('Patrimonio')
 
 
 values = [ 900, 950, 750]
 titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
 
-with marketinf
+with marketinf:
      st.header('Market information')
 
-     
+
 
 
 
