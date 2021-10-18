@@ -38,14 +38,14 @@ option = st.selectbox(
      ('Portfolio', 'Market information', 'Portfolio creator'))
 st.title(option)
    
-     fig = go.Figure()
+    ## fig = go.Figure()
 
 
-     fig=px.pie(values='values', names='titles')
+   #  fig=px.pie(values='values', names='titles')
      
-     fig.update_layout()
+    # fig.update_layout()
      
-     st.write(fig)
+     # st.write(fig)
 
 
 
