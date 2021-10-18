@@ -21,16 +21,14 @@ with header:
 
 with Portfolio:
      st.header('Patrimonio')
-     #patrimonio = pd.read_csv('data/patrimonio.csv')
-     #st.write('patrimonio.csv')
+     #patrimonio = pd.read_csv('./data/patrimonio.csv')
+     #st.write('./data/patrimonio.csv')
      
      df = pd.DataFrame({
-          #'Fecha': [04_08_2020, 28_08_2020, 12_09_2020, 04_11_2020],
-          #'Saldo broker': [10, 20, 30, 40]
-          'Criptomonedas': [0, 0, 131, 122]
-          'Saldo cuenta': [218 ,244, 327, 270]
+        
           })
      df
+     
      chart_data = pd.DataFrame()
      st.line_chart(chart_data)
      titles = ['Fecha','Saldo broker','Criptomonedas','Saldo cuenta']
