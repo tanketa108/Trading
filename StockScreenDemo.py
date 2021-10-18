@@ -1,4 +1,3 @@
-
 import pandas as pd
 import yfinance as yf
 import streamlit as st
@@ -23,9 +22,18 @@ with Portfolio:
      st.header('Patrimonio')
      patrimonio = pd.read_csv('./data/patrimonio.csv')
      st.write('./data/patrimonio.csv')
-
-values = [ 900, 950, 750]
-titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
+     
+     df = pd.DataFrame({
+          #'Fecha': [04_08_2020, 28_08_2020, 12_09_2020, 04_11_2020],
+          #'Saldo broker': [10, 20, 30, 40]
+          'Criptomonedas': [0, 0, 131, 122]
+          'Saldo cuenta': [218 ,244, 327, 270]
+          })
+     df
+     chart_data = pd.DataFrame()
+     st.line_chart(chart_data)
+     titles = ['Fecha','Saldo broker','Criptomonedas','Saldo cuenta']
+     values = [ 900, 950, 750]
 
 with marketinf:
      st.header('Market information')
@@ -47,37 +55,6 @@ st.title(option)
     # fig.update_layout()
      
      # st.write(fig)
-
-
-
-
-
-
-df = pd.DataFrame({
-     'first column': [1, 2, 3, 4],
-     'second column': [10, 20, 30, 40]
-     })
-df
-chart_data = pd.DataFrame()
-st.line_chart(chart_data)
-
-
-
-# Get some data.
-data = np.random.randn(10, 2)
-
-# Show the data as a chart.
-chart = st.line_chart(data)
-
-# Wait 1 second, so the change is clearer.
-time.sleep(1)
-
-# Grab some more data.
-data2 = np.random.randn(10, 2)
-
-# Append the new data to the existing chart.
-chart.add_rows(data2)
-
 
 
 
