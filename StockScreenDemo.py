@@ -51,7 +51,6 @@ with Portfolio:
 
      fig = go.Figure(
           header=titles
-               fill_color='#FDBE72',
                align='center'
           cells=values
                align='left')
