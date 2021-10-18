@@ -16,7 +16,7 @@ option = st.selectbox(
      '',
      ('Portfolio', 'Market information', 'Portfolio creator'))
 
-with Portfolio:
+with option = 'Portfolio':
      st.title(option)
      values = [ 900, 950, 750]
      titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
