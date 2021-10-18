@@ -42,7 +42,7 @@ with Portfolio:
           })
 
      
-     chart_data = pd.DataFrame()
+     chart_data = pd.table_data()
      st.line_chart(chart_data)
      
 with marketinf:
