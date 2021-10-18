@@ -10,17 +10,34 @@ import altair as alt
 import numpy as np
 import time
 
-st.title('MY APP')
+header = st.beta_container()
+Portfolio = st.beta_container()
+marketinf = st.beta_container()
+
+with header:
+     st.title('MY APP')
+
+
+
+with Portfolio
+     st.header('Patrimonio')
+
+
+values = [ 900, 950, 750]
+titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
+
+with marketinf
+     st.header('Market information')
+
+     
+
+
 
 option = st.selectbox(
      '',
      ('Portfolio', 'Market information', 'Portfolio creator'))
-
-with option = 'Portfolio':
-     st.title(option)
-     values = [ 900, 950, 750]
-     titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
-
+st.title(option)
+   
      fig = go.Figure()
 
 
@@ -31,9 +48,6 @@ with option = 'Portfolio':
      st.write(fig)
 
 
-
-header = st.beta_container()
-values = st.beta_container()
 
 
 
