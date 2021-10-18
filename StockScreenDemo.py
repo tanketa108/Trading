@@ -13,6 +13,10 @@ import time
 st.header('MY APP')
 st.subheader('This is a subheader')
 
+header = st.beta_container()
+values = st.beta_container()
+
+
 
 
 df = pd.DataFrame({
@@ -49,9 +53,7 @@ with Portfolio:
      values = [ 900, 950, 750]
      titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
 
-     fig = go.Figure(
-          header=titles    
-          cells=values)
+     fig = go.Figure()
 
 
      fig=px.pie(values='values', names='titles')
