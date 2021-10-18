@@ -42,9 +42,7 @@ with Portfolio:
      
      chart_data = pd.DataFrame()
      st.line_chart(chart_data)
-     titles = 
-     values = [ 900, 950, 750]
-
+     
 with marketinf:
      st.header('Market information')
 
