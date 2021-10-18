@@ -34,8 +34,6 @@ with Portfolio:
               ['01-04-2021', 13, 8, 0],
               ['01-05-2021', 13, 8, 0],
               ['01-06-2021', 12, 5, 0]]
-     # Initialize a figure with ff.create_table(table_data)
-     fig = ff.create_table(table_data, height_constant=60)
 
      table_data.show
      df = pd.DataFrame({
