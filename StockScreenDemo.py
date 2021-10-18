@@ -10,8 +10,28 @@ import altair as alt
 import numpy as np
 import time
 
-st.header('MY APP')
-st.subheader('This is a subheader')
+st.title('MY APP')
+
+st.subheader(option)
+option = st.selectbox(
+     '',
+     ('Portfolio', 'Market information', 'Portfolio creator'))
+
+with Portfolio:
+     st.title(option)
+     values = [ 900, 950, 750]
+     titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
+
+     fig = go.Figure()
+
+
+     fig=px.pie(values='values', names='titles')
+     
+     fig.update_layout()
+     
+     st.write(fig)
+
+
 
 header = st.beta_container()
 values = st.beta_container()
@@ -43,24 +63,9 @@ data2 = np.random.randn(10, 2)
 
 # Append the new data to the existing chart.
 chart.add_rows(data2)
-option = st.selectbox(
-     '',
-     ('Portfolio', 'Market information', 'Portfolio creator'))
 
 
-with Portfolio:
-     st.title(option)
-     values = [ 900, 950, 750]
-     titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
 
-     fig = go.Figure()
-
-
-     fig=px.pie(values='values', names='titles')
-     
-     fig.update_layout()
-     
-     st.write(fig)
 
      
 
