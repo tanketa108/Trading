@@ -50,10 +50,8 @@ with Portfolio:
      titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
 
      fig = go.Figure(
-          header=titles
-               align='center'
-          cells=values
-               align='left')
+          header=titles    
+          cells=values)
 
 
      fig=px.pie(values='values', names='titles')
