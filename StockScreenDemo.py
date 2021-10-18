@@ -25,16 +25,24 @@ with Portfolio:
      st.header('Patrimonio')
      #patrimonio = pd.read_csv('https://github.com/tanketa108/Trading/blob/main/data/Patrimonio.csv')
      #st.write('.C:/Python/Trading/data/Patrimonio.csv')
-     df1 = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/Mining-BTC-180.csv")
-     df1
+     #df1 = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/Mining-BTC-180.csv")
+     # Add table data
+     table_data = [['Fecha','Saldo broker','Criptomonedas','Saldo cuenta'],
+              ['01-01-2021', 18, 4, 0],
+              ['01-02-2021', 18, 5, 0],
+              ['01-03-2021', 16, 5, 0],
+              ['01-04-2021', 13, 8, 0],
+              ['01-05-2021', 13, 8, 0],
+              ['01-06-2021', 12, 5, 0]]
+     table_data
      df = pd.DataFrame({
         
           })
-     df
+
      
      chart_data = pd.DataFrame()
      st.line_chart(chart_data)
-     titles = ['Fecha','Saldo broker','Criptomonedas','Saldo cuenta']
+     titles = 
      values = [ 900, 950, 750]
 
 with marketinf:
