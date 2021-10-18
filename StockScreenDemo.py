@@ -36,7 +36,7 @@ with Portfolio:
               ['01-05-2021', 13, 8, 0],
               ['01-06-2021', 12, 5, 0]]
 
-     table_data.show
+    
      df = pd.DataFrame({
         
           })
