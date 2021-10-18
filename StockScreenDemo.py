@@ -25,12 +25,11 @@ with Portfolio:
      #st.write('patrimonio.csv')
      
      df = pd.DataFrame({
-          
-     'Fecha': [04.08.2020,28.08.2020,12.09.2020,04.11.2020],
-     'Saldo broker': [10,20,30,40]
-     'Criptomonedas': [0,0,131.06,122.23]
-     'Saldo cuenta': [218,244.52,327.52,270.01]
-     })
+          'Fecha': [04.08.2020, 28.08.2020, 12.09.2020, 04.11.2020],
+          'Saldo broker': [10, 20, 30, 40]
+          'Criptomonedas': [0, 0, 131.06, 122.23]
+          'Saldo cuenta': [218 ,244.52, 327.52, 270.01]
+          })
      df
      chart_data = pd.DataFrame()
      st.line_chart(chart_data)
