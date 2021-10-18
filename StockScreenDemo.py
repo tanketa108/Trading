@@ -12,7 +12,6 @@ import time
 
 st.title('MY APP')
 
-st.subheader(option)
 option = st.selectbox(
      '',
      ('Portfolio', 'Market information', 'Portfolio creator'))
