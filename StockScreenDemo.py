@@ -21,7 +21,8 @@ with header:
 
 with Portfolio:
      st.header('Patrimonio')
-
+     patrimonio = pd.read_csv('patrimonio.csv')
+     st.write('patrimonio.csv')
 
 values = [ 900, 950, 750]
 titles = [ 'Saldo broker', 'Criptomonedas', 'Saldo cuenta']
