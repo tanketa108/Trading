@@ -26,13 +26,14 @@ if option == "Portfolio":
 
 if option== "Market Information":
      st.subheader(option)
+     simbol = st.text_input()
      title = st.text_input('APP', 'BAC')
      if title == "APP":
           st.subheader('Hi APP')
      if title == "BAC":
           st.subheader('Hi BAC')
 
-     simbol = "APP"
+     
      st.image(f"http://finviz.com/chart.ashx?t={simbol}")
 
 
