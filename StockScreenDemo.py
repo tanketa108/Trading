@@ -11,6 +11,12 @@ import numpy as np
 import time
 import re 
 
+option = st.sidebar.selectbox("Portfolio", "Market Information")
+
+if option == "Portfolio":
+     st.subheader(option)
+if option== "Market Information":
+     st.subheader(option)
 
 header = st.beta_container()
 Portfolio = st.beta_container()
@@ -42,8 +48,6 @@ with Portfolio:
           })
 
      
-     chart_data = pd.table_data()
-     st.line_chart(chart_data)
      
 with marketinf:
      st.header('Market information')
