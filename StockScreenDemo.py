@@ -22,7 +22,7 @@ option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
 
 if option == "Portfolio":
      st.subheader(option)
-     df = [['Saldo broker','Saldo Criptomonedas'][100,200]]
+     df = dp.DataFrame([['Saldo broker','Saldo Criptomonedas'][100,200]])
      df
      
      #fig = go.Figure(data=go.Table(header=('Saldo broker','Saldo Criptomonedas','Saldo cuenta')), cells=dict())
