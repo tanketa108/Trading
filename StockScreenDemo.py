@@ -26,9 +26,10 @@ if option == "Portfolio":
 
 if option== "Market Information":
      st.subheader(option)
-     tickers = pd.read_html('http://en.wikipedia/wiki/Dow_Jones_Industrial_Average')[1]
-     tickers = tickers.Symbol.to_list()
-     tickers
+     st.image(f"https://markets.businessinsider.com/index/dow_jones")
+     #tickers = pd.read_html('http://en.wikipedia/wiki/Dow_Jones_Industrial_Average')[1]
+     #tickers = tickers.Symbol.to_list()
+     
      
      title = st.text_input('APP', 'BAC')
      if title == "APP":
