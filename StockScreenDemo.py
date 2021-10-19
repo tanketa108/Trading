@@ -39,7 +39,7 @@ if option== "Market Information":
           st.subheader('Hi BAC')
 
 simbol = 'APP'
- st.image(f"http://finviz.com/chart.ashx?t={simbol}")
+ #st.image(f"http://finviz.com/chart.ashx?t={simbol}")
 
 
 
