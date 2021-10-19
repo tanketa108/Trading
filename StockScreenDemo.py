@@ -22,11 +22,12 @@ option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
 
 if option == "Portfolio":
      st.subheader(option)
-     #df = dp.DataFrame([['Saldo broker','Saldo Criptomonedas'][100,200]])
-     spectra = st.file_uploader("upload file", type={"csv", "txt"})
-     if spectra is not None:
-    spectra_df = pd.read_csv(spectra)
-     st.write(spectra_df)
+     titulos = [['Fecha','Saldo broker','Saldo Criptomonedas','Saldo cuenta']
+               ['01/01/2020', 1000, 500, 500]]
+     titulos
+     
+
+     
      
      #fig = go.Figure(data=go.Table(header=('Saldo broker','Saldo Criptomonedas','Saldo cuenta')), cells=dict())
      #fig=px.pie(values='values', names='titles')
