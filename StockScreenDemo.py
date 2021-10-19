@@ -22,14 +22,15 @@ option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
 
 if option == "Portfolio":
      st.subheader(option)
-
+     df = [['Saldo broker','Saldo Criptomonedas'][100,200]]
+     df
      
-     fig = go.Figure(data=go.Table(header=('Saldo broker','Saldo Criptomonedas','Saldo cuenta')), cells=dict())
-     fig=px.pie(values='values', names='titles')
+     #fig = go.Figure(data=go.Table(header=('Saldo broker','Saldo Criptomonedas','Saldo cuenta')), cells=dict())
+     #fig=px.pie(values='values', names='titles')
      
-     fig.update_layout()
+     #fig.update_layout()
      
-     st.write(fig)
+     #st.write(fig)
 
 
 if option== "Market Information":
