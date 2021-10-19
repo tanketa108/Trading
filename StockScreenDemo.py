@@ -14,7 +14,7 @@ import re
 header = st.beta_container()
 Portfolio = st.beta_container()
 marketinf = st.beta_container()
-title = ('APP')
+
 with header:
      st.title('MY APP')
 
@@ -33,8 +33,8 @@ if option== "Market Information":
      if title == "BAC":
           st.subheader('Hi BAC')
 
-     
- st.image(f"http://finviz.com/chart.ashx?t={title}")
+simbol = 'APP'
+ st.image(f"http://finviz.com/chart.ashx?t={simbol}")
 
 
 
