@@ -11,19 +11,24 @@ import numpy as np
 import time
 import re 
 
-option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
-
-if option == "Portfolio":
-     st.subheader(option)
-if option== "Market Information":
-     st.subheader(option)
-
 header = st.beta_container()
 Portfolio = st.beta_container()
 marketinf = st.beta_container()
 
 with header:
      st.title('MY APP')
+
+option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
+
+if option == "Portfolio":
+     st.subheader(option)
+
+
+if option== "Market Information":
+     st.subheader(option)
+     simbol = "APP"
+     st.image(f"http://finviz.com/chart.ashx?t={simbol}")
+
 
 
 
@@ -48,19 +53,6 @@ with Portfolio:
           })
 
      
-     
-with marketinf:
-     st.header('Market information')
-
-
-
-
-
-option = st.selectbox(
-     '',
-     ('Portfolio', 'Market information', 'Portfolio creator'))
-st.title(option)
-   
     ## fig = go.Figure()
 
 
@@ -69,9 +61,6 @@ st.title(option)
     # fig.update_layout()
      
      # st.write(fig)
-
-
-
 
 
 
