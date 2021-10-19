@@ -10,6 +10,8 @@ import altair as alt
 import numpy as np
 import time
 import re 
+import sqlalchemy
+
 
 header = st.beta_container()
 Portfolio = st.beta_container()
@@ -26,6 +28,9 @@ if option == "Portfolio":
 
 if option== "Market Information":
      st.subheader(option)
+     tickers = pf.read_html('http://en.wikipedia/wiki/Dow_Jones_Industrial_Average')[1]
+     tickers = tickers.Symbol.to_list()
+     tickers
      
      title = st.text_input('APP', 'BAC')
      if title == "APP":
