@@ -26,7 +26,7 @@ if option == "Portfolio":
 
 if option== "Market Information":
      st.subheader(option)
-     st.image(f"https://markets.businessinsider.com/index/dow_jones")
+     st.image(f"https://www.tradingview.com/chart/hxphyLUX/?symbol=SP%3ASPX")
      #tickers = pd.read_html('http://en.wikipedia/wiki/Dow_Jones_Industrial_Average')[1]
      #tickers = tickers.Symbol.to_list()
      
