@@ -24,7 +24,7 @@ if option == "Portfolio":
      st.subheader(option)
 
      
-     fig = go.Figure(data=go.Table(header=dict(values=('Saldo broker','Saldo Criptomonedas','Saldo cuenta')), cells=dict()))
+     fig = go.Figure(data=go.Table(header=('Saldo broker','Saldo Criptomonedas','Saldo cuenta')), cells=dict())
      fig=px.pie(values='values', names='titles')
      
      fig.update_layout()
