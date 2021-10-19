@@ -10,8 +10,6 @@ import altair as alt
 import numpy as np
 import time
 import re 
-import sqlalchemy
-
 
 header = st.beta_container()
 Portfolio = st.beta_container()
