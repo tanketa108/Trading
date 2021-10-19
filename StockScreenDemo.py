@@ -1,6 +1,6 @@
 
 import pandas as pd
-import yfinance as yf
+import yfinance as yahooFinance
 import streamlit as st
 import datetime as dt
 import plotly.express as px
@@ -17,6 +17,12 @@ marketinf = st.beta_container()
 
 with header:
      st.title('MY APP')
+     # Here We are getting Facebook financial information
+# We need to pass FB as argument for that
+GetFacebookInformation = yahooFinance.Ticker("FB")
+ 
+# whole python dictionary is printed here
+print(GetFacebookInformation.info)
 
 option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
 
