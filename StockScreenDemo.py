@@ -17,17 +17,13 @@ marketinf = st.beta_container()
 
 with header:
      st.title('MY APP')
-     # Here We are getting Facebook financial information
-# We need to pass FB as argument for that
-GetFacebookInformation = yahooFinance.Ticker("FB")
- 
-# whole python dictionary is printed here
-print(GetFacebookInformation.info)
 
 option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
 
 if option == "Portfolio":
      st.subheader(option)
+
+     df = pd.DataFrame({['Fecha','Saldo broker','Criptomonedas','Saldo cuenta'],['01-01-2021', 18, 4, 0],['01-02-2021', 18, 5, 0],['01-03-2021', 16, 5, 0],['01-04-2021', 13, 8, 0],['01-05-2021', 13, 8, 0],['01-06-2021', 12, 5, 0]})
 
 
 if option== "Market Information":
@@ -67,9 +63,7 @@ with Portfolio:
               ['01-06-2021', 12, 5, 0]]
 
     
-     df = pd.DataFrame({
-        
-          })
+     
 
      
     ## fig = go.Figure()
