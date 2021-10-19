@@ -34,8 +34,10 @@ if option== "Market Information":
      title = st.text_input('APP', 'BAC')
      if title == "APP":
           st.subheader('Hi APP')
+          inf = yf.Ticker(title).info
      if title == "BAC":
           st.subheader('Hi BAC')
+          inf = yf.Ticker(title).info
 
 simbol = 'APP'
  #st.image(f"http://finviz.com/chart.ashx?t={simbol}")
