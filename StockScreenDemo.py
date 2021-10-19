@@ -11,7 +11,7 @@ import numpy as np
 import time
 import re 
 
-option = st.sidebar.selectbox("Portfolio", "Market Information")
+option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
 
 if option == "Portfolio":
      st.subheader(option)
