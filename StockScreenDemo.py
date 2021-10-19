@@ -23,7 +23,13 @@ option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
 if option == "Portfolio":
      st.subheader(option)
 
-     df = pd.DataFrame({['Fecha','Saldo broker','Criptomonedas','Saldo cuenta'],['01-01-2021', 18, 4, 0],['01-02-2021', 18, 5, 0],['01-03-2021', 16, 5, 0],['01-04-2021', 13, 8, 0],['01-05-2021', 13, 8, 0],['01-06-2021', 12, 5, 0]})
+     
+     fig = go.Figure(data=go.Table(header=dict(values=('Saldo broker','Saldo Criptomonedas','Saldo cuenta')), cells=dict()))
+     fig=px.pie(values='values', names='titles')
+     
+     fig.update_layout()
+     
+     st.write(fig)
 
 
 if option== "Market Information":
@@ -66,15 +72,6 @@ with Portfolio:
      
 
      
-    ## fig = go.Figure()
-
-
-   #  fig=px.pie(values='values', names='titles')
-     
-    # fig.update_layout()
-     
-     # st.write(fig)
-
 
 
 # Get some data.
