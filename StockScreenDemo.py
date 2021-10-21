@@ -22,9 +22,7 @@ option = st.sidebar.selectbox("Choose", ("Portfolio", "Market Information"))
 
 if option == "Portfolio":
      st.subheader(option)
-     titulos = [['Fecha','Saldo broker','Saldo Criptomonedas','Saldo cuenta']
-               ['01/01/2020', '1000', '500', '500']]
-     titulos
+     titulos = [1,['Fecha','Saldo broker','Saldo Criptomonedas','Saldo cuenta'],2,['01/01/2020', '1000', '500', '500']]
 
 
      
